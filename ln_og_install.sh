@@ -7,7 +7,7 @@ sudo tar -C /usr/local -xzf go1.24.3.linux-amd64.tar.gz && \
 rm go1.24.3.linux-amd64.tar.gz && \
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc && \
 source ~/.bashrc
-go version
+/usr/local/go/bin/go version
 
 git clone https://github.com/0glabs/0g-storage-node.git
 cd 0g-storage-node
@@ -19,7 +19,6 @@ rm -rf $HOME/0g-storage-node/run/config.toml
 sudo tee $HOME/0g-storage-node/run/config.toml > /dev/null <<EOF
 # This is a TOML config file.
 # For more information, see https://github.com/toml-lang/toml
-# Взято с канала SNGDAO https://t.me/sng_dao
 
 #######################################################################
 ###                     Network Config Options                      ###
