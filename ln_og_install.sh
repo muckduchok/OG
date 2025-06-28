@@ -14,7 +14,7 @@ cd 0g-storage-node
 PRIVATE=$(cat og_private.txt)
 git checkout v1.0.0 && git submodule update --init
 cargo build --release
-rm -rf $HOME/0g-storage-node/run/config.toml
+rm $HOME/0g-storage-node/run/config.toml
 cd run
 wget -O config.toml https://raw.githubusercontent.com/muckduchok/OG/main/config.toml
 chmod +x config.toml
