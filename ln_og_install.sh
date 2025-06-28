@@ -29,7 +29,8 @@ After=network.target
 User=$USER
 WorkingDirectory=$HOME/0g-storage-node/run
 ExecStart=$HOME/0g-storage-node/target/release/zgs_node --config $HOME/0g-storage-node/run/config.toml
-
+StandardOutput=null
+StandardError=null
 Restart=on-failure
 RestartSec=10
 LimitNOFILE=65535
