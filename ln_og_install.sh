@@ -12,7 +12,7 @@ source ~/.bashrc
 git clone https://github.com/0glabs/0g-storage-node.git
 cd 0g-storage-node
 PRIVATE=$(cat og_private.txt)
-git checkout v1.0.0 && git submodule update --init
+git checkout v1.1.0 && git submodule update --init
 cargo build --release
 rm $HOME/0g-storage-node/run/config.toml
 cd run
