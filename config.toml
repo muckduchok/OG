@@ -191,7 +191,7 @@ miner_key = "private_key"
 # If this limit is reached, the node will update its `shard_position`
 # and store only half data.
 #
- db_max_num_sectors = 900000000
+ db_max_num_sectors = 2000000000
 
 # The format is <shard_id>/<shard_number>, where the shard number is 2^n.
 # This only applies if there is no stored shard config in db.
